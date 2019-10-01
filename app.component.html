@@ -1,0 +1,11 @@
+<form (ngSubmit)="getInfoByTeam('Cardinals')" #infoForm="ngForm">
+  <input type="submit" value="Cardinals">
+</form>
+<div id='info'>
+  <h1 class="name">{{name}}</h1>
+  <p class="Stadium">{{stadium}}</p>
+  <ul *ngFor="let MediaAccount of accounts">
+      <li>{{MediaAccount.mediaType}} : {{MediaAccount.value}}</li>
+  </ul>
+</div>
+

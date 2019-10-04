@@ -1,29 +1,26 @@
 <nav class="navbar navbar-expand-md">
-    <img src="../assets/Sports_flat_round_colorful_simple_activities_athletic_colored-09-512.png" class="turtle">
-    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="main-navigation">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="home-page/home-page.component.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" data-toggle="modal" data-target="#modalLoginForm" style="color: white">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" data-toggle="modal" data-target="#modalRegisterForm" style="color: white">Register</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="description">
-      <h1>Welcome to Snap Tackle Pop</h1>
-      <p>No account needed</p>
-      <p>If you'd like to make an account please register</p>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  <img src="../assets/Sports_flat_round_colorful_simple_activities_athletic_colored-09-512.png" class="turtle">
+  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div align="right">
+  <ul id="menu">
+    <li><a routerLink="/home-page">Home</a></li>
+    <li><a routerLink="/landingpage">Login</a></li>
+    <li><a routerLink="/landingpage">Register</a></li>
+  </ul>
+  </div>
+</nav>
+<div class="description">
+    <h1>Welcome to Snap Tackle Pop</h1>
+<!-- Search form -->
+<div class="md-form active-cyan active-cyan-2 mb-3">
+    <input class="form-control" type="search" id="search3" aria-label="Search" mdbInput>
+    <label for="search3">Search for your favorite team!</label>
+  </div>
+  <!-- Modal -->
+    <!-- <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -52,9 +49,9 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- Register Modal -->
-<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+<!-- <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -94,4 +91,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+  <div>
+    <router-outlet></router-outlet>
+  </div>

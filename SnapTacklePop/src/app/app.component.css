@@ -1,6 +1,10 @@
-  /*---background picture---*/
+ul#menu li {
+  display: inline;
+  padding: 15px;
+}
+ /*---background picture---*/
 body {
-    background: grey;
+    background: rgb(194, 192, 192);
   }
   /*--- navigation bar ---*/
   .navbar {

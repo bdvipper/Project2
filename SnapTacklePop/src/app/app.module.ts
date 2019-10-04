@@ -5,17 +5,20 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { Landingpage2Component } from './landingpage2/landingpage2.component';
 
 const appRoutes:Routes=[
   {path:'home-page', component: HomePageComponent},
-  {path:'landingpage', component: LandingpageComponent}
+  {path:'landingpage', component: LandingpageComponent},
+  {path:'landingpage2', component: Landingpage2Component}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingpageComponent,
-    HomePageComponent
+    HomePageComponent,
+    Landingpage2Component
   ],
   imports: [
     BrowserModule,

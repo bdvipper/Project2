@@ -1,0 +1,10 @@
+<div>
+    <form (ngSubmit)="register()"#registerForm="ngForm">
+        <input type="text" name="name" placeholder="Enter Your Full Name" [(ngModel)]="register.name"/><br/>
+        <input type="email" name="email" placeholder="Enter Your Email" [(ngModel)]="register.email"/><br/>
+        <input type="password" name="password" placeholder="Enter Password" [(ngModel)]="register.password"/><br/>
+        <input type="password" name="confirmpassword" placeholder="Confirm Password" [(ngModel)]="register.confirmpassword"/><br/>
+        <input type="text" name="favteam" placeholder="Enter Your Favorite Team" [(ngModel)]="register.favteam"/><br/>
+        <input type="submit" value="Register"/>
+    </form>
+</div>

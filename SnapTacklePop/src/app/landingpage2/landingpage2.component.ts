@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { User } from '../user';
+import { UserService } from '../user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landingpage2',
   templateUrl: './landingpage2.component.html',
   styleUrls: ['./landingpage2.component.css']
 })
-export class Landingpage2Component implements OnInit {
+export class Landingpage2Component {
 
-  constructor() { }
+  user:User;
 
-  ngOnInit() {
+  constructor(private userService: UserService, private router: Router) { 
+    this.user = new User();
+  }
+
+  register(){
+    this.userService.register(this.user).subscribe(data=>{
+      this.user=data;
+    })
   }
 
 }

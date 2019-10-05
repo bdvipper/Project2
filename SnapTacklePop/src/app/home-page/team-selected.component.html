@@ -1,0 +1,10 @@
+<form onsubmit="getInfoByTeam('Cardinals')">
+    <input type="submit" value="Cardinals">
+</form>
+<div id='info'>
+    <h1 class="name">{{name}}</h1>
+    <p class="Stadium">Home Stadium : {{stadium}}</p>
+    <ul *ngFor="let account of accounts">
+        <li>{{account.mediaType}} : {{account.value}}</li>
+    </ul>
+</div>

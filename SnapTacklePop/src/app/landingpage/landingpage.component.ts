@@ -17,9 +17,12 @@ export class LandingpageComponent {
   }
 
   login(){
+    console.log(this.user);
     this.userService.login(this.user).subscribe(data=>{
       this.user=data;
+      console.log(this.user);
     })
+    
   }
 
 }

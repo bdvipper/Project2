@@ -17,6 +17,8 @@ export class Landingpage2Component {
   }
 
   register(){
+    console.log("test");
+    console.log(this.user);
     this.userService.register(this.user).subscribe(data=>{
       this.user=data;
     })

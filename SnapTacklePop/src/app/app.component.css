@@ -2,6 +2,9 @@ ul#menu li {
   display: inline;
   padding: 15px;
 }
+input#search3.form-control {
+  width: 500px;
+}
   /*--- navigation bar ---*/
   .navbar {
     background: rgb(39, 36, 36);

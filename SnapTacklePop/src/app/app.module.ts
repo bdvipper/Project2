@@ -10,7 +10,6 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import {TeamSelectedComponent} from './home-page/team-selected.component';
 import { AuthInterceptor } from './home-page/authentication.interceptor';
 
-
 const appRoutes:Routes=[
   {path:'home-page', component: HomePageComponent},
   {path:'landingpage', component: LandingpageComponent},

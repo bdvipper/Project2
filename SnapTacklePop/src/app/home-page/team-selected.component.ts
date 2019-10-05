@@ -3,7 +3,6 @@ import { MediaAccount } from './media-account';
 import { Information } from './information';
 import { TeamService } from './team.service';
 
-
 @Component({
   selector: 'app-team-selected',
   templateUrl: './team-selected.component.html',

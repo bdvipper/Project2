@@ -16,9 +16,21 @@
     <h1>Welcome to Snap Tackle Pop</h1>
 <!-- Search form -->
 <div class="md-form active-cyan active-cyan-2 mb-3">
-    <input class="form-control" type="search" id="search3" aria-label="Search" mdbInput>
+    <input class="form-control" name="teamsearch" [(ngModel)]="mySearch" type="search" id="search3" aria-label="Search" mdbInput>
     <label for="search3">Search for your favorite team!</label>
   </div>
-  <div id="teamsdiv" width=2000px >
+  <div>
+    <form (ngSubmit)="teamSelected(mySearch)">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+    <div>
+    <h1 class="name">{{name}}</h1>
+    <p class="Stadium">{{stadium}}</p>
+    <ul *ngFor="let account of accounts">
+      <li>{{account.mediaType}} : {{account.value}}</li>
+    </ul>
+  </div>
+  <div>
     <router-outlet></router-outlet>
   </div>

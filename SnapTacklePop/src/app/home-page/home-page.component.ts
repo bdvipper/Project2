@@ -10,7 +10,6 @@ import { Information } from './information';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-
   teamSelect: TeamSelectedComponent;
 
   ngOnInit() {

@@ -1,7 +1,7 @@
 <div>
     <form (ngSubmit)="login()"#loginForm="ngForm">
-        <input type="text" name="username" placeholder="Enter Your Username" [(ngModel)]="login.username"/><br/>
-        <input type="password" name="password" placeholder="Enter Password" [(ngModel)]="login.password"/><br/>
+        <input [(ngModel)]="user.username" type="text" name="username" placeholder="Enter Your Username" [(ngModel)]="login.username"/><br/>
+        <input [(ngModel)]="user.password" type="password" name="password" placeholder="Enter Password" [(ngModel)]="login.password"/><br/>
         <input type="submit" value="Login"/>
     </form>
 </div>

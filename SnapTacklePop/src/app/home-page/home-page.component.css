@@ -1,9 +1,20 @@
 img.logo{
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
     border-radius: 50%;
  }
- 
- ul#menu li {
-    display: inline;
+ ul#menu1 li {
+     display: inline; 
+    box-sizing: content-box;
+
  }
+
+ div{
+    width: 1525px;
+ }
+
+div#teamlogo {
+   /* background-image: url('../../assets/Broncos.png');
+   height: 90px;
+   width: 1500px; */
+}

@@ -32,3 +32,9 @@ input#search3.form-control {
     font-size: 1.3rem;
     line-height: 1.5;
   }
+  .teamsdiv {
+    padding: 5px; 
+    border: 5px;
+    border-color: black;
+    margin: 10px;
+  }

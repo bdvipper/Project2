@@ -7,7 +7,7 @@ export class Team{
     homeVenue: Stadium;
     id: number;
     name: string;
-    logo: string;
+    officialLogoImageSrc: string;
     socialMediaAccounts: MediaAccount[];
     teamColorsHex: string[];
 }

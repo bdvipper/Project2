@@ -17,7 +17,10 @@ export class TeamService{
         this.api="https://api.mysportsfeeds.com/v2.1/pull/nfl/2019-regular/team_stats_totals.json";
     }
 
+    
     public async teamSelected(name:string){
+
+        console.log("Made it to team Service");
 
 
 const one = new Promise<string>(resolve=> {

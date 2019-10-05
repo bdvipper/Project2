@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MediaAccount } from './media-account';
 import { Information } from './information';
 import { TeamService } from './team.service';
+
 
 @Component({
   selector: 'app-team-selected',
@@ -10,12 +11,13 @@ import { TeamService } from './team.service';
 })
 export class TeamSelectedComponent {
   information:Information;
-  name: string;
+  @Input() name : string;
   stadium: string;
   accounts: MediaAccount[];
   constructor(private teamService: TeamService) { }
 
    async teamSelected(team:string) {
+     console.log("team selected method called")
     const one = new Promise<string>((resolve, reject) => {
     this.teamService.teamSelected(team).then(valus=>{
         this.information=valus;

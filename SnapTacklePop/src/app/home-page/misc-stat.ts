@@ -8,7 +8,7 @@ export class MiscStats{
     fourthDownPercent: number;
     OffensiveAvgYards: number;
     OffensivePlays: number;
-    OffensiveYards: number;
+    OffenseYds: number;
     penalties: number;
     penatlyYards: number;
     thirdDown: number;

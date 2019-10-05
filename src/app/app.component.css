@@ -1,0 +1,31 @@
+ul#menu li {
+  display: inline;
+  padding: 15px;
+}
+  /*--- navigation bar ---*/
+  .navbar {
+    background: rgb(39, 36, 36);
+  }
+  .football{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+  }
+  .description h1 {
+    color:rgb(77, 77, 77);
+  }
+  .description p {
+    color: black;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }

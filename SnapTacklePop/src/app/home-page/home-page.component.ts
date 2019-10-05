@@ -4,8 +4,6 @@ import { TeamService } from './team.service';
 import { MediaAccount } from './media-account';
 import { Information } from './information';
 
-
-
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
@@ -13,12 +11,10 @@ import { Information } from './information';
 })
 export class HomePageComponent implements OnInit {
 
-
   teamSelect: TeamSelectedComponent;
 
   ngOnInit() {
   }
-
   information:Information;
   name : string;
   stadium: string;

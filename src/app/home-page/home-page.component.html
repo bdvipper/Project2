@@ -1,139 +1,154 @@
+<p>Select a Team to view their team page</p>
 <body>
+  <div id="homePage">
 <div id="teams" > 
     <!-- return teamSelected(String teamName) -->
-    <ul id= "menu">
-      <li onclick="teamSelected('Cardinals')"><a routerLink ="/Cardinals">
+    <ul id= "menu1">
+      <li><button class="btn" (click)="teamSelected('Cardinals')">
         <img src="../../assets/Cardinals.png" class="logo" alt ="Cardinals"> 
-        Arizona Cardinals</a>
+        Arizona Cardinals</button>
       </li  >
-      <li onclick="teamSelected('Falcons')"><a routerLink ="/Falcons">
+      <li (click)="teamSelected('Falcons')"><button class="btn">
         <img src="../../assets/Falcons.png" class="logo" alt="Falcons"> 
-        Atlanta Falcons</a>
+        Atlanta Falcons</button>
       </li>
-      <li onclick="teamSelected('Ravens')"><a routerLink ="/Ravens">
+      <li (click)="teamSelected('Ravens')"><button class="btn">
         <img src="../../assets/Ravens.png" class="logo" alt="Ravens"> 
-        Baltimore Ravens </a>
+        Baltimore Ravens </button>
       </li>
-      <li onclick="teamSelected('Bills')"><a routerLink ="/Bills">
+      <li (click)="teamSelected('Bills')"><button class="btn">
         <img src="../../assets/Bills.png" class="logo" alt="Bills"> 
-        Buffalo Bills</a>
+        Buffalo Bills</button>
       </li>
-      <li onclick="teamSelected('Panthers')"><a routerLink ="/Panthers">
+      <li (click)="teamSelected('Panthers')"><button class="btn">
         <img src="../../assets/Panthers.png" class="logo" alt="Panthers"> 
-        Carolina Panthers</a>
+        Carolina Panthers</button>
       </li>
-      <li onclick="teamSelected('Bears')"><a routerLink ="/Bears">
+      <li (click)="teamSelected('Bears')"><button class="btn">
         <img src="../../assets/Bears.png" class="logo" alt="Bears"> 
-        Chicago Bears</a>
+        Chicago Bears</button>
       </li>
-      <li onclick="teamSelected('Bengals')"><a routerLink ="/Bengals">
+      <li (click)="teamSelected('Bengals')"><button class="btn">
         <img src="../../assets/Bengals.png" class="logo" alt="Bengals"> 
-        Cincinnati Bengals</a>
+        Cincinnati Bengals</button>
       </li>
-      <li onclick="teamSelected('Browns')"><a routerLink ="/Browns">
+      <li (click)="teamSelected('Browns')"><button class="btn">
         <img src="../../assets/Browns.png" class="logo" alt="Browns"> 
-        Cleveland Browns</a>
+        Cleveland Browns</button>
       </li>
-      <li onclick="teamSelected('Cowboys')"><a routerLink ="/Cowboys">
+      <li (click)="teamSelected('Cowboys')"><button class="btn">
         <img src="../../assets/Cowboys.png" class="logo" alt="Cowboys"> 
-        Dallas Cowboys</a>
+        Dallas Cowboys</button>
       </li>
-      <li onclick="teamSelected('Broncos')"><a routerLink ="/Broncos">
+      <li (click)="teamSelected('Broncos')"><button class="btn">
         <img src="../../assets/Broncos.png" class="logo" alt="Broncos"> 
-        Denver Broncos</a>
+        Denver Broncos</button>
       </li>
-      <li onclick="teamSelected('Lions')"><a routerLink ="/Lions">
+      <li (click)="teamSelected('Lions')"><button class="btn">
         <img src="../../assets/Lions.png" class="logo" alt="Lions"> 
-        Detroit Lions</a>
+        Detroit Lions</button>
       </li>
-      <li onclick="teamSelected('Packers')"><a routerLink ="/Packers">
+      <li (click)="teamSelected('Packers')"><button class="btn">
         <img src="../../assets/Packers.png" class="logo" alt="Packers"> 
-        Green Bay Packers</a>
+        Green Bay Packers</button>
       </li>
-      <li onclick="teamSelected('Texans')"><a routerLink ="/Texans">
+      <li (click)="teamSelected('Texans')"><button class="btn">
         <img src="../../assets/Texans.png" class="logo" alt="Texans"> 
-        Houston Texans</a>
+        Houston Texans</button>
       </li>
-      <li onclick="teamSelected('Colts')"><a routerLink ="/Colts">
+      <li (click)="teamSelected('Colts')"><button class="btn">
         <img src="../../assets/Colts.png" class="logo" alt="Colts"> 
-        Indianapolis Colts</a>
+        Indianapolis Colts</button>
       </li>
-      <li onclick="teamSelected('Jaguars')"><a routerLink ="/Jaguars">
+      <li (click)="teamSelected('Jaguars')"><button class="btn">
         <img src="../../assets/Jaguars.png" class="logo" alt="Jaguars"> 
-        Jacksonville Jaguars</a>
+        Jacksonville Jaguars</button>
       </li>
-      <li onclick="teamSelected('Chiefs')"><a routerLink ="/Chiefs">
+      <li (click)="teamSelected('Chiefs')"><button class="btn">
         <img src="../../assets/Chiefs.png" class="logo" alt="Chiefs"> 
-        Kasas City Chiefs</a>
+        Kasas City Chiefs</button>
       </li>
-      <li onclick="teamSelected('Chargers')"><a routerLink ="/Chargers">
+      <li (click)="teamSelected('Chargers')"><button class="btn">
         <img src="../../assets/Chargers.png" class="logo" alt="Chargers"> 
-        Los Angeles Chargers</a>
+        Los Angeles Chargers</button>
       </li>
-      <li onclick="teamSelected('Rams')"><a routerLink ="/Rams">
+      <li (click)="teamSelected('Rams')"><button class="btn">
         <img src="../../assets/Rams.png" class="logo" alt="Rams"> 
-        Los Angeles Rams</a>
+        Los Angeles Rams</button>
       </li>
-      <li onclick="teamSelected('Dolphins')"><a routerLink ="/Dolphins">
+      <li (click)="teamSelected('Dolphins')"><button class="btn">
         <img src="../../assets/Dolphins.png" class="logo" alt="Dolphins"> 
-        Miami Dolphins</a>
+        Miami Dolphins</button>
       </li>
-      <li onclick="teamSelected('Vikings')"><a routerLink ="/Vikings">
+      <li (click)="teamSelected('Vikings')"><button class="btn">
         <img src="../../assets/Vikings.png" class="logo" alt="Vikings"> 
-        Minnesota Vikings</a>
+        Minnesota Vikings</button>
       </li>
-      <li onclick="teamSelected('Patriots')"><a routerLink ="/Patriots">
+      <li (click)="teamSelected('Patriots')"><button class="btn">
         <img src="../../assets/Patriots.png" class="logo" alt="Patriots"> 
-        New England Patriots</a>
+        New England Patriots</button>
       </li>
-      <li onclick="teamSelected('Saints')"><a routerLink ="/Saints">
+      <li (click)="teamSelected('Saints')"><button class="btn">
         <img src="../../assets/Saints.png" class="logo" alt="Saints"> 
-        New Orleans Saints</a>
+        New Orleans Saints</button>
       </li>
-      <li onclick="teamSelected('Giants')"><a routerLink ="/Giants">
+      <li (click)="teamSelected('Giants')"><button class="btn">
         <img src="../../assets/Giants.png" class="logo" alt="Giants"> 
-        New York Giants</a>
+        New York Giants</button>
       </li>
-      <li onclick="teamSelected('Jets')"><a routerLink ="/Jets">
+      <li (click)="teamSelected('Jets')"><button class="btn">
         <img src="../../assets/Jets.png" class="logo" alt="Jets"> 
-        New York Jets</a>
+        New York Jets</button>
       </li>
-      <li onclick="teamSelected('Raiders')"><a routerLink ="/Raiders">
+      <li (click)="teamSelected('Raiders')"><button class="btn">
         <img src="../../assets/Raiders.png" class="logo" alt="Raiders"> 
-        Oakland Raiders</a>
+        Oakland Raiders</button>
       </li>
-      <li onclick="teamSelected('Eagles')"><a routerLink ="/Eagles">
+      <li (click)="teamSelected('Eagles')"><button class="btn">
         <img src="../../assets/Eagles.png" class="logo" alt="Eagles"> 
-        Philidelphia Eagles</a>
+        Philidelphia Eagles</button>
       </li>
-      <li onclick="teamSelected('Steelers')"><a routerLink ="/Steelers">
+      <li (click)="teamSelected('Steelers')"><button class="btn">
         <img src="../../assets/Steelers.png" class="logo" alt="Steelers"> 
-        Pittsburgh Steelers</a>
+        Pittsburgh Steelers</button>
       </li>
-      <li onclick="teamSelected('49ers')"><a routerLink ="/49ers">
+      <li (click)="teamSelected('49ers')"><button class="btn">
         <img src="../../assets/49ers.png" class="logo" alt="49ers"> 
-        San Francisco 49ers</a>
+        San Francisco 49ers</button>
       </li>
-      <li onclick="teamSelected('Seahawks')"><a routerLink ="/Seahawks">
+      <li (click)="teamSelected('Seahawks')"><button class="btn">
         <img src="../../assets/Seahawks.png" class="logo" alt="Seahawks"> 
-        Seatle Seahawks</a>
+        Seatle Seahawks</button>
       </li>
-      <li onclick="teamSelected('Buccaneers')"><a routerLink ="/Buccaneers">
+      <li (click)="teamSelected('Buccaneers')"><button class="btn">
         <img src="../../assets/Buccaneers.png" class="logo" alt="Buccaneers"> 
-        Tampa Bay Buccaneers</a>
+        Tampa Bay Buccaneers</button>
       </li>
-      <li onclick="teamSelected('Titans')"><a routerLink ="/Titans">
+      <li (click)="teamSelected('Titans')"><button class="btn">
         <img src="../../assets/Titans.png" class="logo" alt="Titans"> 
-        Tennessee Titans</a>
+        Tennessee Titans</button>
       </li>
-      <li onclick="teamSelected('Redskins')"><a routerLink ="/Redskins">
+      <li (click)="teamSelected('Redskins')"><button class="btn">
         <img src="../../assets/Redskins.png" class="logo" alt="Redskins"> 
-        Washington Redskins</a>
+        Washington Redskins</button>
       </li>
     </ul>
+</div>
     
-    </div>
-    <div>
-   
-    </div>
+<!-- <div id="teamlogo"> This is the logo</div> -->
+    <div id='info' >
+      <h1 class="name">{{name}}</h1>    
+      <p class="Stadium">{{stadium}}</p>
+      <p class="Record">{{record}}</p>
+      <p class="Passyds">{{passyds}}</p>
+      <p class="Rushyds">{{rushyds}}</p>
+      <p class="Totalyds">{{totalyds}}</p>
+      <p class="PoitsFor">{{ptsfor}}</p>
+      <p class="PoitsFor">{{ptsagainst}}</p>
+      <p class="PoitDiff">{{ptdiff}}</p>
+      <ul *ngFor="let account of accounts">
+          <li>{{account.mediaType}} : {{account.value}}</li>
+      </ul>
+  </div>
+  </div>
     </body>

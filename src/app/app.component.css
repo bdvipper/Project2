@@ -2,6 +2,9 @@ ul#menu li {
   display: inline;
   padding: 15px;
 }
+input#search3.form-control {
+  width: 300px;
+}
   /*--- navigation bar ---*/
   .navbar {
     background: rgb(39, 36, 36);
@@ -28,4 +31,10 @@ ul#menu li {
     color: black;
     font-size: 1.3rem;
     line-height: 1.5;
+  }
+  .teamsdiv {
+    padding: 5px; 
+    border: 5px;
+    border-color: black;
+    margin: 10px;
   }

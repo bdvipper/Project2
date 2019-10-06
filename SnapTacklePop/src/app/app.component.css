@@ -2,38 +2,20 @@ ul#menu li {
   display: inline;
   padding: 15px;
 }
- /*---background picture---*/
-body {
-    background: rgb(194, 192, 192);
-  }
+input#search3.form-control {
+  width: 500px;
+}
   /*--- navigation bar ---*/
   .navbar {
     background: rgb(39, 36, 36);
   }
-  .nav-link,
-  .navbar-brand {
-    color: #fff;
-    cursor: pointer;
-  }
-  .turtle{
+  .football{
     height: 60px;
     width: 60px;
     border-radius: 50%;
   }
-  .nav-link {
-    margin-right: 1em !important;
-  }
-  .nav-link:hover {
-    color: rgb(129, 123, 123);
-  }
   .navbar-collapse {
     justify-content: flex-end;
-  }
-  .header {
-    background: lightgray;
-    background-size: cover;
-    background-position: center;
-    position: relative;
   }
   .description {
     left: 50%;
@@ -49,4 +31,10 @@ body {
     color: black;
     font-size: 1.3rem;
     line-height: 1.5;
+  }
+  .teamsdiv {
+    padding: 5px; 
+    border: 5px;
+    border-color: black;
+    margin: 10px;
   }

@@ -13,6 +13,21 @@ img.logo{
     width: 1525px;
  }
 
+ input#search3{
+    width: 300px;
+ }
+
+
+div#info{
+   background-color: lightslategrey;
+  width: 1000px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 15px solid black;
+}
+
+
+
 div#teamlogo {
    /* background-image: url('../../assets/Broncos.png');
    height: 90px;

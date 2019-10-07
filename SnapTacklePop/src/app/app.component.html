@@ -1,29 +1,25 @@
 <nav class="navbar navbar-expand-md">
   <img src="../assets/Sports_flat_round_colorful_simple_activities_athletic_colored-09-512.png" class="football">
+  <a class="navbar-brand" href="#">Snap Tackle Pop</a>
   <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div align="right">
+  <div class="collapse navbar-collapse">
   <ul id="menu">
     <li><a routerLink="/home-page">Home</a></li>
     <li><a routerLink="/landingpage">Login</a></li>
     <li><a routerLink="/landingpage2">Register</a></li>
   </ul>
+  
+  
   </div>
 </nav>
-<div class="description">
-    <h1>Welcome to Snap Tackle Pop</h1>
+<div id="mainTitle" class="description">
+    <h1 id="title">Welcome to Snap Tackle Pop</h1>
 <!-- Search form -->
-<div class="md-form active-cyan active-cyan-2 mb-3">
-    <input class="form-control" name="teamsearch" [(ngModel)]="mySearch" type="search" id="search3" aria-label="Search" mdbInput>
-    <label for="search3">Search for your favorite team!</label>
-  </div>
-  <div>
-    <form (ngSubmit)="teamSelected(mySearch)">
-      <input type="submit" value="Submit">
-    </form>
-  </div>
+
+ 
     <div>
     <h1 class="name">{{name}}</h1>
     <p class="Stadium">{{stadium}}</p>

@@ -64,6 +64,7 @@ export class HomePageComponent implements OnInit {
         this.ptsagainst= "Points Allowed : "+this.information.teamStatsTotals[i].stats.standings.pointsAgainst;
         this.ptdiff= "Point Differential : "+this.information.teamStatsTotals[i].stats.standings.pointDifferential;
         this.logourl= this.information.teamStatsTotals[i].team.officialLogoImageSrc;
+        this.logourl= "../../assets/"+team+".png"
         console.log(this.accounts);
         
       }

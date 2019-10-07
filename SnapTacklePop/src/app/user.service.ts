@@ -9,8 +9,8 @@ export class UserService {
 private loginUrl:string;
 private registerUrl:string;
   constructor(private http:HttpClient) { 
-    this.loginUrl="http://localhost:2525/login";
-    this.registerUrl="http://localhost:2525/register";
+    this.loginUrl=" Snaptacklepop-env-1.dsrib2wypc.us-west-1.elasticbeanstalk.com/login";
+    this.registerUrl=" Snaptacklepop-env-1.dsrib2wypc.us-west-1.elasticbeanstalk.com/register";
   }
 public login(user:User){
   return this.http.post<User>(this.loginUrl,user);

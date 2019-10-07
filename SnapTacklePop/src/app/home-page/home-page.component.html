@@ -1,6 +1,7 @@
 <p>Select a Team to view their team page</p>
 <body>
-<div id="teams" > 
+  <div align="center" id="homePage">
+<div align="center" id="teams" > 
     <!-- return teamSelected(String teamName) -->
     <ul id= "menu1">
       <li><button class="btn" (click)="teamSelected('Cardinals')">
@@ -133,10 +134,19 @@
       </li>
     </ul>
 </div>
-    
+<div class="md-form active-cyan active-cyan-2 mb-3">
+  <input class="form-control" name="teamsearch" [(ngModel)]="mySearch" type="search" id="search3" aria-label="Search" mdbInput>
+  <label for="search3">Search for your favorite team!</label>
+</div>
+<div>
+  <form (ngSubmit)="teamSelected(mySearch)">
+    <input id="searchSubmit" type="submit" value="Submit">
+  </form>
+</div>
 <!-- <div id="teamlogo"> This is the logo</div> -->
-    <div id='info' >
-      <h1 class="name">{{name}}</h1>    
+    <div align="center" id='info' >
+      <h1 class="name">{{name}}</h1>
+      <img src={{logourl}} alt="">  
       <p class="Stadium">{{stadium}}</p>
       <p class="Record">{{record}}</p>
       <p class="Passyds">{{passyds}}</p>
@@ -148,5 +158,6 @@
       <ul *ngFor="let account of accounts">
           <li>{{account.mediaType}} : {{account.value}}</li>
       </ul>
+  </div>
   </div>
     </body>
